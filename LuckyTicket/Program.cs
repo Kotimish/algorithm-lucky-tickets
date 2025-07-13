@@ -60,7 +60,7 @@ namespace LuckyTicket
             long countCombinations = 0;
             for (int i = 0; i < combination.Length; i++)
             {
-                countCombinations += (long)Math.Pow(combination[i], 2);
+                countCombinations += combination[i] * combination[i];
             }
             return countCombinations;
         }
